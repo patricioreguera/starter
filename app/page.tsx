@@ -7,7 +7,7 @@ const Home = async () => {
 	// ya con el resultado de la llamada se puede hacer el .map
 	return (
 		<>
-			<h1>Hello</h1>
+			<h1>Hello world</h1>
 			{projects?.map((project: any) => (
 				<h1 key={project._id}>{project.name}</h1>
 			))}
