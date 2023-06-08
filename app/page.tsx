@@ -1,6 +1,6 @@
 import { getProjects } from "@/sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
-import Image from "next/image";
+//import Image from "next/image";
 
 const Home = async () => {
 	const projects = await getProjects();
@@ -16,4 +16,4 @@ const Home = async () => {
 };
 
 export default Home;
-export const revalidate = 120; // revalidate this page every 60 seconds
+export const revalidate = 60; // revalidate this page every 60 seconds
